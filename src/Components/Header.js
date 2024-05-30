@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Header=()=>{
     //Fixed Scroll Up Arrow 
     const [visible,setVisible]=useState(false);
@@ -18,7 +19,18 @@ const Header=()=>{
 
     return(
         <section className="container-fluid">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <p>We are accepting online orders now! Delivering pan India. <span>Dismiss</span></p>
+            </div>
+            <div className="container-fluid">
+                <p>Special Offers! Sign up to receive the latest Topdeal exclusives discounts Learn more
+                <span>Learn more</span></p>
+            </div>
+            <div className="container-fluid">
+                <p>Welcome to Maganlal Chikki,Lonavala! <Link to="/">Join Free</Link>or<Link to="/">Sign in</Link></p>
+                <span>Learn more</span>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
                 <div class="container-fluid">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
